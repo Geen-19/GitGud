@@ -308,3 +308,151 @@ And then we stepped into the tough parts and saw what is
 
 1. Git merge
 2. Git rebase
+
+
+## More Code
+# Basic Git Commands
+
+This guide provides examples for basic Git commands that are commonly used for version control.
+
+## Configuring Git
+
+- **`git config`**: Configures Git settings, such as the user's name and email.
+
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+    ```
+
+## Initializing and Cloning Repositories
+
+- **`git init`**: Initializes a new Git repository in the current directory.
+
+    ```bash
+    git init
+    ```
+
+- **`git clone`**: Clones an existing repository to your local machine.
+
+    ```bash
+    git clone https://github.com/user/repo.git
+    ```
+
+## Managing Changes
+
+- **`git add`**: Stages changes in the working directory to be committed.
+
+    ```bash
+    git add <filename>
+    git add .
+    ```
+
+- **`git commit`**: Commits staged changes to the repository with a message.
+
+    ```bash
+    git commit -m "Commit message"
+    ```
+
+- **`git diff`**: Shows the differences between files in the working directory and the repository.
+
+    ```bash
+    git diff
+    ```
+
+- **`git reset`**: Undoes changes in the working directory or uncommits changes.
+
+    ```bash
+    git reset <file>
+    git reset --hard <commit>
+    ```
+
+## Checking Status and Managing Files
+
+- **`git status`**: Shows the current status of the repository, including staged, unstaged, and untracked files.
+
+    ```bash
+    git status
+    ```
+
+- **`git rm`**: Removes a file from the working directory and the staging area.
+
+    ```bash
+    git rm <filename>
+    ```
+
+## Viewing History
+
+- **`git log`**: Displays the commit history of the repository.
+
+    ```bash
+    git log
+    ```
+
+- **`git show`**: Displays detailed information about a specific commit.
+
+    ```bash
+    git show <commit>
+    ```
+
+## Tagging Commits
+
+- **`git tag`**: Creates a tag for a specific commit.
+
+    ```bash
+    git tag <tagname> <commit>
+    ```
+
+## Branching and Merging
+
+- **`git branch`**: Manages branches in the repository. Can create, delete, or list branches.
+
+    ```bash
+    git branch
+    git branch <branchname>
+    ```
+
+- **`git checkout`**: Switches to a different branch or creates a new one.
+
+    ```bash
+    git checkout <branchname>
+    git checkout -b <newbranch>
+    ```
+
+- **`git merge`**: Merges a specified branch into the current branch.
+
+    ```bash
+    git merge <branchname>
+    ```
+
+## Remote Repositories
+
+- **`git remote`**: Manages remote repositories, such as adding or removing them.
+
+    ```bash
+    git remote add <remote-name> <url>
+    ```
+
+- **`git push`**: Pushes commits from the local repository to a remote repository.
+
+    ```bash
+    git push
+    git push <remote> <branch>
+    ```
+
+- **`git pull`**: Fetches changes from a remote repository and merges them into the local branch.
+
+    ```bash
+    git pull
+    git pull <remote> <branch>
+    ```
+
+## Stashing Changes
+
+- **`git stash`**: Temporarily saves changes in the working directory that are not yet committed.
+
+    ```bash
+    git stash
+    git stash pop
+    ```
+
+This guide provides examples of basic Git commands to help you understand their usage and syntax. Let me know if you need more information or examples!
